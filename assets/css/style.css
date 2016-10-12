@@ -1,0 +1,37 @@
+/* BODY BUILDING LIKE ARNOLD! */ 
+
+body {
+	margin: 0;
+}
+
+
+/* STYLE THAT HEADER! */
+
+header {
+	background-color: #35D8E6;
+	margin: 0;
+	width: 100%;
+}
+
+#gameHeader {
+	text-align: center;
+	color: #6EFBFC;
+}
+
+/* POSITION THOSE DIVS! */
+
+#container {
+	position: fluid;
+}
+
+#gemContainer {
+	float: left;
+	width: 80%;
+
+}
+
+.gemImage {
+	width: 215px;
+	padding: 0;
+	margin: 0;
+}
