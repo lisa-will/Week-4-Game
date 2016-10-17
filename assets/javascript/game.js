@@ -1,5 +1,4 @@
 // Getting jQuery with it! NaN-NaN-NaN-NaN-NaN-Na! // 
-"use strict";
 
  $(document).ready(function() {
  	var crystals = ['assets/images/1.png',
@@ -35,10 +34,8 @@
 		console.log(numbers);
 
 		for (i = 0; i < numbers.length; i++) {
-			var imageCrystal = $('<img>');
+			var imageCrystal = $('.crystalImage' + i);
 			imageCrystal.attr('data-num',numbers[i]);
-			imageCrystal.attr('src',crystals[i]);
-			imageCrystal.attr('alt','crystals');
 			imageCrystal.addClass('crystalImage');
 			$('.crystals').append(imageCrystal);
 		}
@@ -70,7 +67,7 @@ function newGame() {
 		
 		if(counter == numberGuess) {
 			alert("HOORAY! You Win!!!");
-			$('#status').text('We Have A Winner!!!');
+			$('#status').text('HEY WINNER!! DO THAT AGAIN!');
 			wins++;
 			$('#win').text(wins);
 			console.log(wins);
@@ -83,7 +80,7 @@ function newGame() {
 		
 		else if (counter > numberGuess){
 			alert("BOOO! You Lose!");
-			$('#status').text('YOU LOSE!!');
+			$('#status').text('YOU LOSE!! TRY AGAIN!');
 			losses++;
 			$('#loss').text(losses);
 			console.log(losses);
