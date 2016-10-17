@@ -18,20 +18,40 @@ header {
 	color: #6EFBFC;
 }
 
+h1 {
+	letter-spacing: 5px;
+}
+
+h2 {
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+#button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* POSITION THOSE DIVS! */
 
 #container {
-	position: fluid;
+	width: 900px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#gemContainer {
-	float: left;
-	width: 80%;
 
+#crystals {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.crystals{
+
+
+.crystalImage{
 	width: 215px;
-	padding: 0;
+	padding: 5px;
 	margin: 0;
 }

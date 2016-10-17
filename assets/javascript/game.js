@@ -1,9 +1,6 @@
 // Getting jQuery with it! NaN-NaN-NaN-NaN-NaN-Na! // 
-
-$(document).ready(function() {
-
-	crystals = ['assets/images/1.png','assets/images/2.png','assets/images/3.png','assets/images/4.png','assets/images/5.png','assets/images/6.png'];
-	
+ $(document).ready(function() {
+   	
 	var counter = 0;
 	var wins = 0; 
 	var losses = 0;
@@ -28,10 +25,8 @@ $(document).ready(function() {
 		console.log(numbers);
 
 		for (i = 0; i < numbers.length; i++) {
-			var imageCrystal = $('<img>');
+			var imageCrystal = $('img');
 			imageCrystal.attr('data-num', numbers[i]);
-			imageCrystal.attr('src', crystals[i]);
-			imageCrystal.attr('alt', 'crystals');
 			imageCrystal.addClass('crystalImage')
 			$('crystals').append(imageCrystal);
 		}
@@ -42,15 +37,16 @@ function newGame() {
 	counter = 0; 
 	$('#score').text(counter);
 
-	function randomIntFormInterval(min,max){
+	function randomIntFromInterval(min,max){
 		return Math.floor(Math.random()*(max-min+1)+min);
 	}
 
-	var numberGuess = randomIntFormInterval(19,120);
+	var numberGuess = randomIntFromInterval(19,120);
 	$('.value').text(numberGuess);
 
 	$('.crystalImage').on('click', function(){
 		counter = counter + parseInt($(this).data('num'));
+
 
 		$('#score').text(counter);
 		
