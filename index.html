@@ -17,11 +17,11 @@
 </header>
 
 <div class="container">
-  <h2>Crystal Collector Game</h2> 
+  <h2>Go! Go! Crystal Collector Game</h2> 
 
   <!-- Trigger the modal with a button -->
-  <div id="button">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">How to Play</button>
+  
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="margin-left: 40%; margin-bottom: 2%;">How to Play</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -35,13 +35,14 @@
         </div>
         <div class="modal-body">
           <p>At the start of the game you will be given a random number!</p>
-          <p>The six crystals below have been assigned a mystery number. By clicking on a crystal you will add a specific amount of points to your total score or "Crystal Count".</p>
-          <p>You can only win the game by matching your Crystal Count to the random number. If your Crystal Count is higher than the random number you lose the game.</p>
-          <p>Keep in mind, each time the game restarts the value of each crystal also changes! The crystal's value are never the same. So keep a watchful eye and perhaps a calculator handy!</p>
+          <p>Each of the 6 crystals below have been assigned a mystery number. (Oooooh!) By clicking on a crystal you will add a specific amount of points to your total score or "Crystal Count".(Aaaah!)</p>
+          <p>You can only WIN the game by matching your Crystal Count to the random number. If your Crystal Count is higher than the random number you LOSE the game.(Boo!)</p>
+          <p>Keep in mind, each time the game restarts so does the value of each crystal! The crystal's value are never the same. So keep a watchful eye and perhaps a calculator handy!</p>
+          <p>Good Luck!</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">PLAY</button>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -50,22 +51,22 @@
 
   <!-- New Row for # Crystals to Collect! --> 
 	<div class="row">
-		<div class="col-sm-4 panel text-center">
+		<div class="col-sm-3 panel text-center" style="margin-left: 100px;">
 			<p>Crystals to Collect:<br><span class="value"></span></p>
 		</div>
-	
-    <!--New Row for Score board -->
-		<div class="col-sm-4 panel text-center">
-			<span id="status"></span>
-				<p>Wins:<br><span id="win"></span></p>
-				<p>Losses:<br><span id="loss"></span></p>
-		</div>	
-
+	 
     <!-- Crystal Count -->
-		<div class="col-sm-4 panel text-center">
-				<p>Your Crystal Count:<span id="score">0</span></p>
-		</div>
-	</div>	
+    <div class="col-sm-3 panel text-center" style="margin-left: 25px;">
+        <p>Your Crystal Count:<br><span id="score">0</span></p>
+    </div>
+
+    <!--New Row for Score board -->
+		<div class="col-sm-3 panel text-center" style="margin-left: 25px;">
+			<span id="status"></span>
+				<p>Wins:<br><span id="win">0</span></p>
+				<p>Losses:<br><span id="loss">0</span></p>
+		</div>	
+   </div> 
 
 <!--Crystal Board -->
 <hr>
@@ -74,7 +75,6 @@
   				<img src="assets/images/1.png" alt="crystals" class="crystalImage">
   				<img src="assets/images/2.png" alt="crystals" class="crystalImage">
   				<img src="assets/images/3.png" alt="crystals" class="crystalImage">
-  				<br>
   				<img src="assets/images/4.png" alt="crystals" class="crystalImage">
   				<img src="assets/images/5.png" alt="crystals" class="crystalImage">
   				<img src="assets/images/6.png" alt="crystals" class="crystalImage">

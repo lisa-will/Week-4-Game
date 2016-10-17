@@ -1,6 +1,11 @@
 // Getting jQuery with it! NaN-NaN-NaN-NaN-NaN-Na! // 
  $(document).ready(function() {
-   	
+   	var crystals = ['assets/images/1.png',
+   					'assets/images/2.png',
+   					'assets/images/3.png',
+   					'assets/images/4.png',
+   					'assets/images/5.png',
+   					'assets/images/6.png'];
 	var counter = 0;
 	var wins = 0; 
 	var losses = 0;
@@ -51,22 +56,26 @@ function newGame() {
 		$('#score').text(counter);
 		
 		if(counter == numberGuess) {
-			$('#status').text('WINNER!!!');
+			alert("HOORAY! You Win!!!");
+			$('#status').text('We Have A Winner!!!');
 			wins++;
 			$('#win').text(wins);
 			console.log(wins);
 			$('#crystals').empty();
+			
 
 			newCrystals();
 			newGame();
 			}	
 		
 		else if (counter > numberGuess){
-			$('#status').text('LOSER!!');
+			alert("BOOO! You Lose!");
+			$('#status').text('YOU LOSE!!');
 			losses++;
 			$('#loss').text(losses);
 			console.log(losses);
 			$('crystals').empty();
+
 				
 			newCrystals();
 			newGame();
