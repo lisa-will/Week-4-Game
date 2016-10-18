@@ -12,20 +12,18 @@
 
 <body>
 
-<!-- Add some tunes -->
-<embed src="assets/music/Marimba-music.mp3" autostart="true" width="0" height="0" loop="true">
-
 <!-- Game Header -->
 <header>
 <h1 class id="gameHeader">COUNT YOUR CRYSTALS</h1>
 </header>
 
-  <div class="container">
+<!-- Container --> 
+<div class="container">
   <h2>Go! Go! Crystal Collector Game</h2> 
 
   <!-- Trigger the modal with a button -->
   
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="margin-left: 40%; margin-bottom: 2%;">How to Play</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="margin-left: 40%; margin-bottom: 2%;">How to Play</button><br><br>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -58,6 +56,7 @@
 		<div class="col-sm-3 panel text-center" style="margin-left: 100px;">
 			<p>Crystals to Collect:<br><span class="value"></span></p>
 		</div>
+   
 	 
     <!-- Crystal Count -->
     <div class="col-sm-3 panel text-center" style="margin-left: 25px;">
@@ -72,9 +71,8 @@
 		</div>	
    </div> 
 
-<!--Crystal Board -->
-<hr>
-<div id="crystals">
+ <!--Crystal Board -->
+ <div id="crystals">
 		<div class="row">
   			<img src="assets/images/1.png" alt="crystals" class="crystalImage0">
   			<img src="assets/images/2.png" alt="crystals" class="crystalImage1">
@@ -84,6 +82,9 @@
 				<img src="assets/images/6.png" alt="crystals" class="crystalImage5">
     </div>
 	</div>
+
+<!-- Add some tunes -->
+<embed src="assets/music/Marimba-music.mp3" autostart="true" width="0" height="0" loop="true"> 
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="assets/javascript/game.js"></script>

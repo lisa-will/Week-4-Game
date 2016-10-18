@@ -71,7 +71,7 @@ function newGame() {
 			wins++;
 			$('#win').text(wins);
 			console.log(wins);
-			$('#crystals').empty();
+			$('crystals').empty();
 			
 
 			newCrystals();
